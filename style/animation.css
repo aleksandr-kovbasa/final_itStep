@@ -5,16 +5,16 @@
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 .slide-in-left_delay {
-  animation: slide-in-left 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
-  -webkit-animation: slide-in-left 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+  animation: slide-in-left 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+  -webkit-animation: slide-in-left 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
 }
 .slide-in-left {
 	animation: slide-in-left 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	-webkit-animation: slide-in-left 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .slide-in-right_delay {
-	animation: slide-in-right 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
-	-webkit-animation: slide-in-right 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+	animation: slide-in-right 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	-webkit-animation: slide-in-right 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
 }
 .slide-in-right {
 	animation: slide-in-right 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -23,6 +23,9 @@
 .shake-horizontal {
 	animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1s 2 both;
 	-webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1s 2 both;
+}
+.bounce-top {
+	animation: bounce-top 0.9s 3s both;
 }
 /**
  * ----------------------------------------
@@ -97,4 +100,75 @@
   90% {
     transform: translateX(-8px);
   }
+}
+/**
+ * ----------------------------------------
+ * animation bounce-top
+ * ----------------------------------------
+ */
+ @keyframes bounce-top {
+  0% {
+    transform: translateY(-445px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+    -webkit-transform: translateY(-445px);
+    -moz-transform: translateY(-445px);
+    -ms-transform: translateY(-445px);
+    -o-transform: translateY(-445px);
+}
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+    -webkit-transform: translateY(-24px);
+    -moz-transform: translateY(-24px);
+    -ms-transform: translateY(-24px);
+    -o-transform: translateY(-24px);
+}
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+    -webkit-transform: translateY(-12px);
+    -moz-transform: translateY(-12px);
+    -ms-transform: translateY(-12px);
+    -o-transform: translateY(-12px);
+}
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    -o-transform: translateY(-6px);
+}
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+}
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}
 }

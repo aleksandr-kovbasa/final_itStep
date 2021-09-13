@@ -3,7 +3,7 @@ $(function() {
   setTimeout(function() {
     $("div").removeClass("blur");
     $("body").addClass("loaded");
-  }, 3000);
+  }, 1000);
 })
 
 // burger menu
